@@ -6,7 +6,7 @@ function buttonFunction() {
 
   var valid = false;
   if (checkpassword(password) == false) {
-    $("#passwordFeedback").html("Incorrect username or password. Please try again.");
+    $("#passwordFeedback").html("Make it stronger!!! Please try again.");
     $("#passwordFeedback").css("color", "#dc3545");
 
   } else {
@@ -46,7 +46,7 @@ function checkpassword(password) {
   }
 
   console.log(strength);
-  if (strength > 3){
+  if (strength > 4){
     return true;
   } else {
     return false;
